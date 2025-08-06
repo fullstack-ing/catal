@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "watch": "esbuild ./js/app.js ./css/app.css --bundle --splitting --format=esm --watch  --tree-shaking=true --sourcemap --outdir=../priv/static/assets --external:/fonts/* --external:/images/*",
+    "build": "esbuild ./js/app.js ./css/app.css --bundle --splitting --format=esm --minify --tree-shaking=true --analyze   --outdir=../priv/static/assets --external:/fonts/* --external:/images/*"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.8"
+  },
+  "dependencies": {}
+}
